@@ -6,7 +6,7 @@
     <title>Sistema de Gerenciamento de Eventos Online</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -14,20 +14,20 @@
       <!-- Barra de navegação -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{{route('home-adm')}}">MF VET</a>
+          <a class="navbar-brand" href="{{route('home-adm')}}">  <img src="{{ asset('assets/logo.png') }}" alt="Logo" style="width: 40px; height: 40px;    "> MF VET</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse navbar-nav-custom" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ route('home-adm') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('show-cadastro-pet') }}">Cadastro</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('show-cadastro-pet') }}">Cadastro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('lista-pet') }}">Gerenciar</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('lista-pet') }}">Gerenciar</a>
               </li>
            
             </ul>

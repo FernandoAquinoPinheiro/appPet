@@ -4,6 +4,7 @@
 <h1 class="text-center" >Esta é a página do Lista Pet</h1>
 
 <div class="container mt-5">
+    
     <div class="row justify-content-center">
         <div class="col-md-6">
             <form method="POST" action="{{ route('lista-pet') }}">
