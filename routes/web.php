@@ -13,10 +13,10 @@ Route::get('/alterar-pet/{id}',[TbPetController::class,'MostrarPetCodigo'])->nam
 
 
 //para cadastrar
-Route::post('/cadastro-pet,',[TbPetController::class,'CadastroPet'])->name('cadastra-pet');
+Route::post('/cadastro-pet',[TbPetController::class,'CadastrarPet'])->name('cadastra-pet');
 
 //para deletar
-Route::delete('/apaga=pet/{id}',[TbPetController::class,'Destroy'])->name('apaga-pet');
+Route::delete('/apaga-pet/{id}',[TbPetController::class,'Destroy'])->name('apaga-pet');
 
 //alterar
 Route::put('/alter-pet/{id}',[TbPetController::class,'Update'])->name('altera-pet');

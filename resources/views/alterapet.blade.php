@@ -33,7 +33,7 @@
                 <input type="text" class="form-control" id="nomeDono" name="nomeDono" value="{{$registrosPet->nomeDono}}" placeholder="Digite o nome do Respnsavel Pelo Pet" required>
             </div>
             
-            <button type="submit" class="btn btn-primary">Cadastrar Pet</button>
+            <button type="submit" class="btn btn-primary">Alterar dados do Pet</button>
         </form>
     </div>
 

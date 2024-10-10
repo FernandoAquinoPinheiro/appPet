@@ -6,7 +6,7 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <form method="POST" action="">
+            <form method="POST" action="{{ route('lista-pet') }}">
                 @csrf
                 <div class="mb-3 text-center">
                     <label for="inputPet" class="form-label fw-bolder">Digite o Pet</label>
@@ -40,10 +40,10 @@
                      
                             <th scope="row">{{$registrosPets->idPet}}</th>
                             <td>{{$registrosPets->nomePet}}</td>
-                            <td><{{$registrosPets->idadePet}}</td>
-                            <td><{{$registrosPets->especie}}</td>
-                            <td><{{$registrosPets->raca}}</td>
-                            <td><{{$registrosPets->nomeDono}}</td>
+                            <td>{{$registrosPets->idadePet}}</td>
+                            <td>{{$registrosPets->especie}}</td>
+                            <td>{{$registrosPets->raca}}</td>
+                            <td>{{$registrosPets->nomeDono}}</td>
                             
                             <td>
                             <a href="{{route('show-altera-pet',$registrosPets->idPet)}}">

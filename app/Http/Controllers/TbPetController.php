@@ -19,7 +19,7 @@ class TbPetController extends Controller
    //mostra tela de cadastro do pet
    public function MostrarCadastroPet(){
 
-        return vie('cadastropet');
+        return view('cadastropet');
 
    }
 
@@ -59,13 +59,13 @@ class TbPetController extends Controller
             'nomePet' => 'string|required',
             'idadePet' => 'integer|required',
             'especie' => 'string|required',
-            'raca' => 'srting|required',
+            'raca' => 'string|required',
             'nomeDono' => 'string|required'
         ]);
 
          $id->fill($registros);
          $id->save();
-         return Redirect::rout("home-adm");
+         return Redirect::route("home-adm");
 
    }
 
@@ -84,7 +84,7 @@ class TbPetController extends Controller
         $registros = tbPet::query();
         $registros->when($request->nomePet,function($query,$valor){
 
-            $query->where('nomePet','like','%',$valor,'%');
+            $query->where('nomePet','like','%'.$valor.'%');
 
         });
         
