@@ -11,7 +11,7 @@
             @csrf
             <div style="justify-content:center; text-align:center; align-items:center; margin:20px; position:relative; right:2%">
                 <label for="inputPet" class="form-label fw-bolder" style="width:200px;font-size: 22px">Digite o Pet</label>
-                <input type="text" class="form-control" id="inputPet" style="width:380px; position:relative; left:34%" name="pet" required>
+                <input type="text" class="form-control" id="inputPet" style="width:380px; position:relative; left:34%" name="nomePet" required>
                 <button type="submit" style="position: relative; margin-top:10px" class="btn btn-primary">Pesquisar</button>
             </div>
         </form>

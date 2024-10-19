@@ -22,3 +22,6 @@ Route::delete('/apaga-pet/{id}',[TbPetController::class,'Destroy'])->name('apaga
 Route::put('/alter-pet/{id}',[TbPetController::class,'Update'])->name('altera-pet');
 
 
+Route::post('/lista-pet',[TbPetController::class,'MostrarPetNome'])->name('lista-pet');
+
+
